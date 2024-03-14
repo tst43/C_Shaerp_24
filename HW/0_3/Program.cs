@@ -7,6 +7,9 @@ int b = int.Parse(Console.ReadLine()!);
 Console.WriteLine("введите третье значение");
 int c = int.Parse(Console.ReadLine()!);
 int max = 0;
+if (a == b || a == c) {
+    Console.WriteLine("Все числа равны!");
+}
 if (a > b)
 {
     max = a;
@@ -16,4 +19,4 @@ if (max < c)
 {
     max = c;
 }
-Console.WriteLine("Максимальное значение:" + max);
+Console.WriteLine("Максимальное значение: " + max);
